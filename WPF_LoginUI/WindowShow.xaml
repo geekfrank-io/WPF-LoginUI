@@ -1,0 +1,20 @@
+﻿<Window x:Class="WPF_LoginUI.WindowShow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPF_LoginUI"
+        mc:Ignorable="d"
+        Title="Window" Height="450" Width="800">
+    <Grid>
+        <ListView>
+            <ListBoxItem>今天星期六！</ListBoxItem>
+            <ListBoxItem>今天星期日！</ListBoxItem>
+            <ListBoxItem>今天星期一！</ListBoxItem>
+            <ListBoxItem>今天星期二！</ListBoxItem>
+            <ListBoxItem>今天星期三！</ListBoxItem>
+            <ListBoxItem>今天星期四！</ListBoxItem>
+            <ListBoxItem>今天星期五！</ListBoxItem>
+        </ListView>
+    </Grid>
+</Window>

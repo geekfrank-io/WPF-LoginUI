@@ -31,11 +31,11 @@
                 <ColumnDefinition Width="200"/>
             </Grid.ColumnDefinitions>
             <TextBlock Grid.Row="0" Grid.Column="0" Text="Username:" VerticalAlignment="Center" Margin="2"></TextBlock>
-            <TextBox Grid.Row="0" Grid.Column="1"  VerticalAlignment="Center"></TextBox>
+            <TextBox x:Name="txtUsername"  Grid.Row="0" Grid.Column="1"  VerticalAlignment="Center" Text="{Binding Username}"></TextBox>
             <TextBlock Grid.Row="1" Grid.Column="0" Text="Password:" VerticalAlignment="Center" Margin="2"></TextBlock>
-            <TextBox Grid.Row="1" Grid.Column="1"  VerticalAlignment="Center"></TextBox>
+            <TextBox x:Name="txtPassword" Grid.Row="1" Grid.Column="1"  VerticalAlignment="Center" Text="{Binding  Password}"></TextBox>
             <CheckBox Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2" Content="Remeber" VerticalAlignment="Center"></CheckBox>
-            <Button Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="2" Content="Login" Width="200"  HorizontalAlignment="Center"></Button>
+            <Button Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="2" Content="Login" Width="200"  HorizontalAlignment="Center" Command="{Binding LoginAction}"></Button>
         </Grid>
     </Grid>
 </Window>
